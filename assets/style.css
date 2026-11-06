@@ -27,3 +27,30 @@ body{overflow-x:hidden}
 @media(max-width:850px){.capability-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.technology-inner{grid-template-columns:1fr;gap:25px}}
 @media(max-width:560px){.capability-grid{grid-template-columns:1fr}.capability-card{padding:23px}.technology-section{padding:52px 0}.faq-list details{padding:18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.capability-card,.reveal{transition:none!important}}
+
+/* DWS COMPLETE FINISH */
+.skip-link{position:absolute;left:-9999px;top:10px;z-index:99999;padding:12px 18px;background:#fff;color:#07101e;border-radius:8px}
+.skip-link:focus{left:10px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #42d7ff;outline-offset:3px}
+.company-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:35px}
+.company-card{padding:28px;border:1px solid rgba(90,190,255,.18);border-radius:18px;background:linear-gradient(145deg,rgba(17,35,62,.85),rgba(8,15,29,.95))}
+.company-card>span,.why-grid>div>b{color:#55d8ff;font-weight:800;letter-spacing:2px}
+.company-card h3,.why-grid h3{margin:17px 0 9px}
+.company-card p,.why-grid p{color:#aabbd0;line-height:1.75;margin:0}
+.why-section{padding-top:45px;padding-bottom:65px}
+.why-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-top:35px}
+.why-grid>div{padding:23px;border-radius:16px;border:1px solid rgba(90,190,255,.16);background:rgba(13,29,50,.65)}
+.whatsapp-contact{margin:20px 0}
+.whatsapp-contact a{display:inline-flex;padding:12px 18px;border-radius:10px;background:#168d58;color:#fff;text-decoration:none;font-weight:700}
+.whatsapp-float{position:fixed;right:20px;bottom:20px;z-index:9999;background:#25D366;color:#fff;padding:14px 20px;border-radius:30px;text-decoration:none;font-weight:700;box-shadow:0 5px 20px #0005}
+.footer-links{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;padding:18px 20px;border-top:1px solid rgba(130,190,255,.12)}
+.footer-links a{color:#a9c7e3;text-decoration:none;font-size:13px}
+.footer-links a:hover{color:#55d8ff}
+.legal-page{min-height:100vh;padding:55px 20px;background:#080b14;color:#eaf4ff}
+.legal-content{max-width:850px;margin:auto;padding:35px;border:1px solid rgba(90,190,255,.2);border-radius:20px;background:#0d1728}
+.legal-content h1,.legal-content h2{color:#f4f9ff}
+.legal-content p,.legal-content li{color:#b4c4d8;line-height:1.8}
+.legal-content a{color:#55d8ff}
+.legal-back{display:inline-block;margin-bottom:25px;color:#55d8ff}
+@media(max-width:850px){.why-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.company-grid,.why-grid{grid-template-columns:1fr}.legal-content{padding:23px 18px}.whatsapp-float{right:13px;bottom:13px;padding:12px 16px}}
