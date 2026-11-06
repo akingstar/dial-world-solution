@@ -4,7 +4,7 @@
   2) Paste its /exec URL below.
   3) Replace the email and WhatsApp placeholders in index.html before publishing.
 */
-const GOOGLE_SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz2AZfQIFnXmLEaEhEBJsdskggMtrqwcJM5MuVaXFVXDFbVwyTIDXs6bHvAH5sO94K9/exec";
 
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
