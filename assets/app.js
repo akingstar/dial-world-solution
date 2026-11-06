@@ -76,3 +76,20 @@ form?.addEventListener("submit", async (event) => {
     submit.innerHTML = 'Send enquiry <span>→</span>';
   }
 });
+/* DWS_REVEAL_UPGRADE */
+document.documentElement.classList.add("reveal-ready");
+const revealTargets = document.querySelectorAll(".section-heading,.service-card,.capability-card,.price-card,.recurring-card,.steps>div,.faq-list details");
+revealTargets.forEach((el)=>el.classList.add("reveal"));
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver((entries,observer)=>{
+    entries.forEach((entry)=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },{threshold:0.12});
+  revealTargets.forEach((el)=>revealObserver.observe(el));
+} else {
+  revealTargets.forEach((el)=>el.classList.add("visible"));
+}
